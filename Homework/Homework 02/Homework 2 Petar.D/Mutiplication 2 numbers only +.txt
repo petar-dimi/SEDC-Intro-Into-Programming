@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+
+    int a;
+    int b;
+    int zbir;
+    printf("Enter two number that you want to multiply \n");
+    scanf("%d \n", &a);
+    scanf("%d", &b);
+    for(i = 0;i < a; i++){
+        zbir = zbir + b;
+    }
+    printf("%d multiplied by %d is %d",a,b,zbir);
+    return 0;
+}

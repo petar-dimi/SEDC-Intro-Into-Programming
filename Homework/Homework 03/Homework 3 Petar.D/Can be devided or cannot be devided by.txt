@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+int main() {
+    int a;
+    int b;
+    printf("Input 2 number: ");
+    scanf("%d \n", &a);
+    scanf("%d", &b);
+         if (a % b == 0) {
+            printf("The number %d can be devided with %d.\n", a, b);
+        } else {
+            printf("The number %d cannot be devided with %d.\n", a, b);
+        }
+    return 0;
+}

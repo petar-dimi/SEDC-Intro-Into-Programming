@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main()
+{
+    printf("This is a calculator to determine a studen's final grade \n");
+    
+    int math;
+    int sci;
+    int his;
+    int eng;
+    float average;
+    
+    do{
+    printf("Enter the student's Math grade \n");
+    scanf("%d", &math);
+    
+        if(math < 0 || math > 5){
+        printf("Wrong grade input.Please enter a grade between 0 and 5 \n");
+        }
+        
+    }while (math < 0 || math > 5);
+    
+    do{
+    printf("Enter the student's Science grade \n");
+    scanf("%d", &sci);
+    
+        if(sci < 0 || sci > 5){
+        printf("Wrong grade input.Please enter a grade between 0 and 5 \n");
+        }
+        
+    }while (sci < 0 || sci > 5);
+    
+   do{
+    printf("Enter the student's History grade \n");
+    scanf("%d", &his);
+    
+        if(his < 0 || his > 5){
+        printf("Wrong grade input.Please enter a grade between 0 and 5 \n");
+        }
+        
+    }while (his < 0 || his > 5);
+    
+   do{
+    printf("Enter the student's English grade \n");
+    scanf("%d", &eng);
+    
+        if(eng < 0 || eng > 5){
+        printf("Wrong grade input.Please enter a grade between 0 and 5 \n");
+        }
+        
+    }while (eng < 0 || eng > 5);
+    
+    average = (math + his + sci + eng) / 4.00;
+    
+    if(average >= 3.00){
+    
+    printf("The student's final grade is %.2f \n", average);
+    printf("The student'has a passing grade \n");
+    }
+    
+    if(average <= 3.00){
+    
+    printf("The student's final grade is %.2f \n", average);
+    printf("The student'has a failling grade");
+    }
+    
+    return 0;
+}
